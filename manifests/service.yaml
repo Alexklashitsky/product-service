@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: testdeployment
-  namespace: namespace-workflow-1718348071671
+  name: testaks
+  namespace: namespace-workflow-1718350685701
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: testdeployment
+    app: testaks
   ports:
     - protocol: TCP
       port: 3002
