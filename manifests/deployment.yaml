@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: test_deployment
   labels:
-    app: test_deployment
+    app: testdeployment
     kubernetes.azure.com/generator: devhub
   namespace: namespace-workflow-1718348071671
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test_deployment
+      app: testdeployment
   template:
     metadata:
       labels:
-        app: test_deployment
+        app: testdeployment
     spec:
       containers:
         - name: test_deployment
