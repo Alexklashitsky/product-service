@@ -5,7 +5,7 @@ metadata:
   labels:
     app: testaks
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1718350685701
+  namespace: namespace-workflow-1718351020235
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: testaks
-          image: rgyhhrtyr6yyfh.azurecr.io/image-workflow-1718350685701:latest
+          image: rgyhhrtyr6yyfh.azurecr.io/image-workflow-1718351020235:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3002
