@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testaks
+  name: product-service
   labels:
-    app: testaks
+    app: product-service
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1718351020235
+  namespace: namespace-workflow-1718622123130
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: testaks
+      app: product-service
   template:
     metadata:
       labels:
-        app: testaks
+        app: product-service
     spec:
       containers:
-        - name: testaks
-          image: rgyhhrtyr6yyfh.azurecr.io/image-workflow-1718351020235:latest
+        - name: product-service
+          image: aksautosela.azurecr.io/product-service:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3002
